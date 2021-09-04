@@ -14,7 +14,7 @@ function App() {
   const [slide, setSlide] = useState(0);
 
   const slideImages = [Img1, Img2, Img3, Img4, Img5];
-  
+
   const handleNext = () => {
     slide < 4 && setSlide(slide + 1);
   }
@@ -47,11 +47,11 @@ function App() {
         </div>
 
         <div className="dots">
-          <div className={"dot " + ((slide == 0) && 'active')} onClick={()=> setSlide(0)}></div>
-          <div className={"dot " + ((slide == 1) && 'active')} onClick={()=> setSlide(1)}></div>
-          <div className={"dot " + ((slide == 2) && 'active')} onClick={()=> setSlide(2)}></div>
-          <div className={"dot " + ((slide == 3) && 'active')} onClick={()=> setSlide(3)}></div>
-          <div className={"dot " + ((slide == 4) && 'active')} onClick={()=> setSlide(4)}></div>
+          <div className={"dot " + ((slide === 0) && 'active')} onClick={() => setSlide(0)}></div>
+          <div className={"dot " + ((slide === 1) && 'active')} onClick={() => setSlide(1)}></div>
+          <div className={"dot " + ((slide === 2) && 'active')} onClick={() => setSlide(2)}></div>
+          <div className={"dot " + ((slide === 3) && 'active')} onClick={() => setSlide(3)}></div>
+          <div className={"dot " + ((slide === 4) && 'active')} onClick={() => setSlide(4)}></div>
         </div>
       </div>
     </section>
