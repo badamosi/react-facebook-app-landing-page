@@ -44,15 +44,15 @@ function App() {
         </div>
         <div className="image">
           <img src={slideImages[slide]} alt="" className="slides" />
+          <div className="dots">
+            <div className={"dot " + ((slide === 0) && 'active')} onClick={() => setSlide(0)}></div>
+            <div className={"dot " + ((slide === 1) && 'active')} onClick={() => setSlide(1)}></div>
+            <div className={"dot " + ((slide === 2) && 'active')} onClick={() => setSlide(2)}></div>
+            <div className={"dot " + ((slide === 3) && 'active')} onClick={() => setSlide(3)}></div>
+            <div className={"dot " + ((slide === 4) && 'active')} onClick={() => setSlide(4)}></div>
+          </div>
         </div>
 
-        <div className="dots">
-          <div className={"dot " + ((slide === 0) && 'active')} onClick={() => setSlide(0)}></div>
-          <div className={"dot " + ((slide === 1) && 'active')} onClick={() => setSlide(1)}></div>
-          <div className={"dot " + ((slide === 2) && 'active')} onClick={() => setSlide(2)}></div>
-          <div className={"dot " + ((slide === 3) && 'active')} onClick={() => setSlide(3)}></div>
-          <div className={"dot " + ((slide === 4) && 'active')} onClick={() => setSlide(4)}></div>
-        </div>
       </div>
     </section>
   );
