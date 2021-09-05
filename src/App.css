@@ -172,7 +172,7 @@ header ul .active {
 
   .content {
     flex-direction: column-reverse;
-    margin: 12vh auto;
+    margin: 65px auto;
     padding: 30px;
     width: 100%;
   }
